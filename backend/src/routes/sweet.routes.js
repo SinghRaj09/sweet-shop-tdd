@@ -5,9 +5,10 @@ const {
   getAllSweets,
   deleteSweet,
 } = require("../controllers/sweet.controller");
+const { authMiddleware } = require("../middleware/auth.middleware");
 
-router.post("/", createSweet);
-router.get("/", getAllSweets);
-router.delete("/:id", deleteSweet);
+router.post("/", authMiddleware, createSweet);
+router.get("/", authMiddleware, getAllSweets);
+router.delete("/:id", authMiddleware, deleteSweet);
 
 module.exports = router;
