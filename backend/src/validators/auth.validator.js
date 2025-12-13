@@ -9,3 +9,11 @@ exports.validateRegisterInput = ({ email, password }) => {
 
   return null;
 };
+
+exports.validateLoginInput = ({ email, password }) => {
+  if (!email || !password) {
+    return "Email and password are required";
+  }
+
+  return null;
+};
