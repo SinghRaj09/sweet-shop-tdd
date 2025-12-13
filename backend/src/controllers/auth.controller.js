@@ -1,16 +1,10 @@
+const { validateRegisterInput } = require("../validators/auth.validator");
+
 exports.register = (req, res) => {
-  const { email, password } = req.body;
+  const error = validateRegisterInput(req.body);
 
-  if (!email) {
-    return res.status(400).json({
-      error: "Email is required",
-    });
-  }
-
-  if (!password) {
-    return res.status(400).json({
-      error: "Password is required",
-    });
+  if (error) {
+    return res.status(400).json({ error });
   }
 
   return res.status(201).json({
