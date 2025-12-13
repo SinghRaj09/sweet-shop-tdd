@@ -11,3 +11,18 @@ exports.register = (req, res) => {
     message: "User registered successfully",
   });
 };
+
+exports.login = (req, res) => {
+  const { email, password } = req.body;
+
+  if (!email || !password) {
+    return res.status(400).json({
+      error: "Email and password are required",
+    });
+  }
+
+  return res.status(200).json({
+    message: "Login successful",
+  });
+};
+
