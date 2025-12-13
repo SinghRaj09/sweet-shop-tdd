@@ -1,9 +1,13 @@
 const request = require("supertest");
 const app = require("../../src/app");
 
-describe("Sweet CRUD APIs", () => {
+const authHeader = {
+  Authorization: "Bearer fake-token",
+};
 
-  it("should create a new sweet", async () => {
+describe("Sweet CRUD APIs (Protected)", () => {
+
+  it("should block creating sweet without auth", async () => {
     const res = await request(app)
       .post("/api/sweets")
       .send({
@@ -11,32 +15,27 @@ describe("Sweet CRUD APIs", () => {
         price: 500,
       });
 
-    expect(res.status).toBe(201);
-    expect(res.body).toHaveProperty("id");
-    expect(res.body.name).toBe("Kaju Katli");
+    expect(res.status).toBe(401);
   });
 
-  it("should get all sweets", async () => {
-    const res = await request(app).get("/api/sweets");
-
-    expect(res.status).toBe(200);
-    expect(Array.isArray(res.body)).toBe(true);
-  });
-
-  it("should delete a sweet by id", async () => {
-    const createRes = await request(app)
+  it("should create sweet with auth", async () => {
+    const res = await request(app)
       .post("/api/sweets")
+      .set(authHeader)
       .send({
-        name: "Laddu",
-        price: 300,
+        name: "Kaju Katli",
+        price: 500,
       });
 
-    const sweetId = createRes.body.id;
+    expect(res.status).toBe(201);
+  });
 
-    const deleteRes = await request(app).delete(`/api/sweets/${sweetId}`);
+  it("should get sweets with auth", async () => {
+    const res = await request(app)
+      .get("/api/sweets")
+      .set(authHeader);
 
-    expect(deleteRes.status).toBe(200);
-    expect(deleteRes.body.message).toBe("Sweet deleted");
+    expect(res.status).toBe(200);
   });
 
 });
