@@ -19,3 +19,13 @@ export const loginUser = async (data) => {
 
   return res.json();
 };
+
+export const getSweets = async (token) => {
+  const res = await fetch(`${API_BASE_URL}/sweets`, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+
+  return res.json();
+};
