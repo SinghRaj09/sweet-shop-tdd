@@ -39,3 +39,28 @@ describe("Sweet CRUD APIs (Protected)", () => {
   });
 
 });
+
+it("should fail when sweet name is missing", async () => {
+  const res = await request(app)
+    .post("/api/sweets")
+    .set({ Authorization: "Bearer fake-token" })
+    .send({
+      price: 400,
+    });
+
+  expect(res.status).toBe(400);
+  expect(res.body).toHaveProperty("error");
+});
+
+it("should fail when sweet price is missing", async () => {
+  const res = await request(app)
+    .post("/api/sweets")
+    .set({ Authorization: "Bearer fake-token" })
+    .send({
+      name: "Rasgulla",
+    });
+
+  expect(res.status).toBe(400);
+  expect(res.body).toHaveProperty("error");
+});
+
