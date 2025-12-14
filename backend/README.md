@@ -10,8 +10,8 @@
 
 ## 📋 Table of Contents
 
-- [Overview](#overview)
-- [Features](#features)
+- [Overview](#🎯overview)
+- [Features](#✨features)
 - [Tech Stack](#tech-stack)
 - [Project Architecture](#project-architecture)
 - [Getting Started](#getting-started)
@@ -24,7 +24,7 @@
 
 ---
 
- 🎯 ## Overview
+## 🎯 Overview
 
 Sweet Shop is a modern web application that demonstrates professional software engineering practices including:
 
