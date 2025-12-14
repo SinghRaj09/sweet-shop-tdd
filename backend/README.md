@@ -10,8 +10,8 @@
 
 ## 📋 Table of Contents
 
-- [Overview](#🎯overview)
-- [Features](#✨features)
+- [Overview](#overview)
+- [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Project Architecture](#project-architecture)
 - [Getting Started](#getting-started)
@@ -19,11 +19,9 @@
 - [API Documentation](#api-documentation)
 - [Development Workflow](#development-workflow)
 - [AI Usage & Transparency](#ai-usage--transparency)
-- [Contributing](#contributing)
-- [Author](#author)
 
 ---
-
+<a id="overview"></a>
 ## 🎯 Overview
 
 Sweet Shop is a modern web application that demonstrates professional software engineering practices including:
@@ -35,7 +33,7 @@ Sweet Shop is a modern web application that demonstrates professional software e
 - **Git Best Practices** - Meaningful commits and clear history
 
 ---
-
+<a id="features"></a>
 ## ✨ Features
 
 ### Backend Capabilities
@@ -84,7 +82,7 @@ Sweet Shop is a modern web application that demonstrates professional software e
   - Clean data flow
 
 ---
-
+<a id="tech-stack"></a>
 ## 🛠️ Tech Stack
 
 ### Backend Technologies
@@ -108,7 +106,7 @@ Sweet Shop is a modern web application that demonstrates professional software e
 | **CSS3** | Styling | Modern |
 
 ---
-
+<a id="project-architecture"></a>
 ## 🏗️ Project Architecture
 
 ### Backend Structure
@@ -175,7 +173,7 @@ frontend/
 ```
 
 ---
-
+<a id="getting-started"></a>
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -190,7 +188,7 @@ frontend/
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/sweet-shop-tdd.git
+git clone https://github.com/SinghRaj09/sweet-shop-tdd.git
 cd sweet-shop-tdd
 ```
 
@@ -270,7 +268,7 @@ REACT_APP_ENV=development
 ```
 
 ---
-
+<a id="testing"></a>
 ## 🧪 Testing
 
 ### Test-Driven Development (TDD)
@@ -355,7 +353,7 @@ Frontend Coverage:    > 75%
 ```
 
 ---
-
+<a id="api-documentation"></a>
 ## 📡 API Documentation
 
 ### Authentication Endpoints
@@ -455,7 +453,7 @@ Response: 200 OK
 ```
 
 ---
-
+<a id="development-workflow"></a>
 ## 💻 Development Workflow
 
 ### Git Workflow
@@ -513,7 +511,7 @@ refactor(middleware): simplify error handling logic
 - **Testing**: AAA pattern (Arrange, Act, Assert)
 
 ---
-
+<a id="ai-usage--transparency"></a>
 ## 🤖 AI Usage & Transparency
 
 ### AI Tools Used
@@ -623,76 +621,13 @@ vercel --prod
 
 ---
 
-## 📝 Future Enhancements
-
-- [ ] Add sweet categories and filtering
-- [ ] Implement user ratings and reviews
-- [ ] Add shopping cart functionality
-- [ ] Integrate payment gateway
-- [ ] Add admin dashboard
-- [ ] Implement image upload with cloud storage
-- [ ] Add email notifications
-- [ ] Create mobile app version
-- [ ] Add analytics and reporting
-- [ ] Implement caching layer
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Write tests for new features (TDD)
-4. Commit your changes (`git commit -m 'feat: add AmazingFeature'`)
-5. Push to the branch (`git push origin feature/AmazingFeature`)
-6. Open a Pull Request
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
+<a id="author"></a>
 ## 👤 Author
 
 **Raj Singh**
 
-- GitHub: [@rajsingh](https://github.com/rajsingh)
-- LinkedIn: [Raj Singh](https://linkedin.com/in/rajsingh)
-- Email: raj@example.com
+- GitHub: [@rajsingh](https://github.com/SinghRaj09)
+- LinkedIn: [Raj Singh](https://www.linkedin.com/in/raj-the-analyst/)
+- Email: singh1406raj@gmail.com
 
 ---
-
-## 🙏 Acknowledgments
-
-- Thanks to the open-source community
-- Express.js and React.js documentation
-- Jest testing framework team
-- AI tools that assisted in development (ChatGPT, Claude)
-- Code reviewers and mentors
-
----
-
-## 📞 Support
-
-If you have any questions or need help, please:
-
-1. Check the [Issues](https://github.com/yourusername/sweet-shop-tdd/issues) page
-2. Open a new issue with detailed information
-3. Contact me directly via email
-
----
-
-<div align="center">
-
-**⭐ Star this repository if you find it helpful!**
-
-Made with ❤️ and ☕ by Raj Singh
-
-</div>
