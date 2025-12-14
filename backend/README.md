@@ -24,7 +24,7 @@
 
 ---
 
-## 🎯 Overview
+ 🎯 ## Overview
 
 Sweet Shop is a modern web application that demonstrates professional software engineering practices including:
 
